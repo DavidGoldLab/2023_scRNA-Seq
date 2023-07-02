@@ -1,0 +1,13 @@
+# Unzip gtf file
+
+tar -xf Aurelia.Genome_Annotation_v1.2_05-08-23_w_minicollagen.tar.gz
+
+# Download Aurelia genome
+
+https://drive.google.com/file/d/1cfUCdI5_ay7JS4bMQTzjdh80EdlxSGii/view?usp=share_link
+
+# Extract proteins from revised GTF file with GFFRead
+
+gffread Aurelia.Genome_Annotation_v1.2_05-08-23_w_minicollagen.gtf \
+-g Aurelia.Genome_v1.2_11-27-18.fasta \
+-y Aurelia.Proteins_5-19-23.fasta
